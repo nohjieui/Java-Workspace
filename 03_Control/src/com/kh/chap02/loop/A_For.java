@@ -102,6 +102,7 @@ public class A_For {
 			System.out.print(i +" ");
 		}
 		
+		
 	}
 	
 	public void method4() {
@@ -130,6 +131,7 @@ public class A_For {
 		}
 		System.out.println("1부터 10까지의 총 합계 : " + sum);
 	}
+		
 	
 	public void method6() {
 		// 1에서부터 사용자가 입력한 숫자까지 모두 더해서 출력해보기
@@ -190,6 +192,7 @@ public class A_For {
 		}
 		
 		System.out.printf("1부터 %d까지의 총 합은 %d입니다.", random, sum);
+		
 		
 	}
 	

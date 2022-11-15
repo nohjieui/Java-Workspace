@@ -13,7 +13,7 @@ public class Run {
 //		af.method4();
 //		af.method5();
 //		af.method6();
-//		af.method7();
+		af.method7();
 //		af.method8();
 //		af.method9();
 //		af.method10();
@@ -30,7 +30,7 @@ public class Run {
 //		bw.method4();
 //		bw.method5();
 //		bw.method6();
-		bw.method7();
+//		bw.method7();
 		
 	}
 
