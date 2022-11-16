@@ -1,6 +1,6 @@
 package com.kh.run;
 
-import com.kh.array.A_Array;
+import com.kh.array.*;
 
 public class Run {
 
@@ -12,7 +12,7 @@ public class Run {
 //		aa.method3();
 //		aa.method4();
 //		aa.method5();
-		aa.method6();
+//		aa.method6();
 //		aa.method7();
 //		aa.method8();
 //		aa.method9();
@@ -20,5 +20,21 @@ public class Run {
 //		aa.method11();
 //		aa.method12();
 		
+		B_ArrayCopy bac = new B_ArrayCopy();
+//		bac.method1();
+//		bac.method2();
+//		bac.method3();
+//		bac.method4();
+//		bac.method5();
+		
+		C_DimensionalArray cda = new C_DimensionalArray();
+//		cda.method1();
+//		cda.method2();
+//		cda.method3();
+//		cda.method4();
+//		cda.method4
+//		cda.method5();
+//		cda.method6();
+		cda.method7();
 	}
 }

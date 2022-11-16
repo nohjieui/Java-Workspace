@@ -137,9 +137,9 @@ public class A_Array {
 			System.out.println(iArr[i]); //iArr에 담겨있는 각 인덱스의 값을 출력
 		}
 		
-//		for(double i = 0; i < dArr.length; i++) {
-//			System.out.println(dArr[i]); //dArr에 담겨있는 각 인덱스의 값을 출력
-//		}
+		for(int i = 0; i < dArr.length; i++) {
+			System.out.println(dArr[i]); //dArr에 담겨있는 각 인덱스의 값을 출력
+		}
 		/*
 		 * 내가 각 인덱스 초기화하지 않았는데도 값들이 담겨있는 이유
 		 * -> heap라는 영역에는 절~대로 빈공간이 존재할 수 없기 때문.
@@ -195,31 +195,25 @@ public class A_Array {
 		 * arr[4] = 10;
 		 */
 		
+		
+		int value = 0;
 		for(int i = 0; i < arr.length; i++) {
-			arr[i] = i+1
+			//방법 1.
+			//arr[i] = (i+1) * 2; 
+			//arr[0] = 1 * 2; 
+			//arr[1] = 2 * 2; 
+			//arr[2] = 3 * 2;
+			//..
+			//arr[2] = 5 * 2;
+			
+			//방법2.
+			arr[i] = value;
+			value += 1 *2;
 		}
 		
-		
-		
-		
-//		int value = 0;
-//		for(int i = 0; i < arr.length; i++) {
-//			//방법 1.
-//			//arr[i] = (i+1) * 2; 
-//			//arr[0] = 1 * 2; 
-//			//arr[1] = 2 * 2; 
-//			//arr[2] = 3 * 2;
-//			//..
-//			//arr[2] = 5 * 2;
-//			
-//			//방법2.
-//			arr[i] = value;
-//			value += 1 *2;
-//		}
-//		
-//		for(int i = 0; i < arr.length; i++) {
-//			System.out.println(arr[i]);
-//		}
+		for(int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
 		
 		//System.out.println(arr[5]);
 		//arr[6] = 100;
