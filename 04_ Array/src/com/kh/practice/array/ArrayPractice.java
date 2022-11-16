@@ -141,23 +141,22 @@ public class ArrayPractice {
 		// 배열의 크기만큼 사용자가 직접 값을 입력하여 각각의 인덱스에 값을 초기화 하세요
 		// 그리고 배열 전체 값을 나열하고 각 인덱스에 저장된 값들의 합을 출력하세요
 		
-		System.out.print("배열의 길이 : ");
+		System.out.print("정수 : ");
 		int num = sc.nextInt();
 		
-		int[] arrNum = new int[num];
+		int[] arr = new int[num];
 		
-		for(int i = 0; i < arrNum.length; i++) {
-			System.out.printf("배열 %d번째 인덱스에 넣을 값 : ", i);
-			int num2 = sc.nextInt();
-			arrNum[i] = num2;
+		for(int i = 0; i < arr.length; i++) {
+			System.out.printf("배열 %d번째 인덱스에 넣을 값 : ",i);
+			arr[i] = sc.nextInt();
 		}
 		int sum = 0;
-
-		for(int i = 0; i < arrNum.length; i++) {
-			System.out.print(arrNum[i] + " ");
-			sum += arrNum[i];
+		
+		for(int i = 0; i<arr.length; i++) {
+			System.out.print(arr[i] + " ");
+			sum += arr[i];
 		}
-		System.out.println("\n총 합 : "+ sum);
+		System.out.println("\n총 합 : " + sum);
 		
 	}
 	
@@ -194,11 +193,7 @@ public class ArrayPractice {
 			for(int j = 0; j<arr.length; j++) {
 				System.out.print(arr[j] + (j == arr.length-1 ? "": ", "));
 			}
-			
-			
 		}
-		
-		
 		
 		
 	}
@@ -208,21 +203,19 @@ public class ArrayPractice {
 		// "OOO 치킨 배달 가능 ", 없으면 "OOO 치킨은 없는 메뉴입니다" 를 출력하세요
 		// 단, 치킨 메뉴가 들어가있는 배열은 본인 스스로 정하세요
 		
-		String[] menu = {"양념", "후라이드", "고추바사삭", "레드콤보"};
- 		
+		String[] menu = {"후라이드", "양념", "고추바사삭","허니콤보"};
+		
 		System.out.print("치킨 이름을 입력하세요 : ");
 		String chiken = sc.nextLine();
 		
-		for(int i = 0; i<menu.length; i++) {
+		for(int i = 0; i < menu.length; i++) {
 			if(menu[i].equals(chiken)) {
-				System.out.println(chiken+ " 치킨 배달 가능");
-				return;
-			} 
-			
+				System.out.println(chiken + " 치킨 배달 가능");
+				return; // 아래내용이 실행되지 않게끔 종료시킴
+			}
 		}
-		System.out.println(chiken +"치킨은 없는 메뉴입니다.");
+		System.out.println(chiken + " 치킨은 없는 메뉴입니다.");
 	}
-	
 	
 
 }

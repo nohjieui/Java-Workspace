@@ -54,8 +54,8 @@ public class C_DimensionalArray {
 			}
 			System.out.println();
 		}
-		
 	}
+		
 	
 	public void method2() {
 		// 순서대로 1,2,3,4,... 15 값을 넣어보기
@@ -63,8 +63,8 @@ public class C_DimensionalArray {
 		
 		// 값을 대입, 출력
 		int value =1;
-		for(int i = 0; i < arr.length; i++) { // 0 1 2
-			for(int j = 0; j < arr[i].length ; j++) { // 0 1 2 3 4
+		for(int i = 0; i < arr.length; i++) { // 3행 -> 0 1 2
+			for(int j = 0; j < arr[i].length ; j++) { // 5열 -> 0 1 2 3 4
 				// arr[i][j] 00, 01, 02, 03, 04 
 				arr[i][j] = value++;
 				
@@ -86,7 +86,7 @@ public class C_DimensionalArray {
 		
 		for(int i = 0; i < arr2.length; i++) { //3행 반복
 			for(int j = 0; j < arr2[i].length; j++) { //5열 반복
-				System.out.print(arr2[i][j] + "\t");
+				System.out.print(arr2[i][j] + "\t"); //\t : tap
 			}
 			System.out.println();
 		}
@@ -131,10 +131,11 @@ public class C_DimensionalArray {
 		}
 		
 		for(int i = 0; i < arr.length; i++) {
-			System.out.println(Arrays.toString(arr[i]));
+			System.out.println(Arrays.toString(arr[i])); //java.util.Arrays의 toString() 메소드 사용
 		}
 		
 	}
+	
 	
 	public void method5() {
 		// char[][] 가변 배열 생성
@@ -148,13 +149,23 @@ public class C_DimensionalArray {
 		arr[1] = new char[2];
 		arr[2] = new char[6];
 		
+//		char value = 'a';
+//		for(int i = 0; i < arr.length; i++) {
+//			for(int j = 0; j < arr[i].length; j++) {
+//				arr[i][j] = value;
+//				
+//				value = (char) (value + 1);
+//				System.out.print(arr[i][j]+"\t");
+//			}
+//			System.out.println();
+//		}
+		
 		char value = 'a';
 		for(int i = 0; i < arr.length; i++) {
 			for(int j = 0; j < arr[i].length; j++) {
-				arr[i][j] = value;
+				arr[i][j] = value++;
 				
-				value = (char) (value + 1);
-				System.out.print(arr[i][j]+"\t");
+				System.out.print(arr[i][j] + " ");
 			}
 			System.out.println();
 		}
@@ -170,9 +181,9 @@ public class C_DimensionalArray {
 		
 		String[][] arr = new String[3][3];
 		
-		for(int i = 0; i < arr.length; i++) {
-			for(int j = 0; j < arr[i].length; j++) {
-				System.out.printf("(%d , %d) ",i, j);
+		for(int i = 0; i <arr.length; i++) {
+			for(int j = 0; j<arr[i].length; j++) {
+				System.out.printf("(%d , %d)", i, j);
 			}
 			System.out.println();
 		}
@@ -194,7 +205,7 @@ public class C_DimensionalArray {
 		
 		for(int i = 0; i < arr.length; i++) { // 0 -> 국어 , 1 -> 영어
 			if(i == 0) {
-				System.out.println("국어점수를 입력하세요 : ");
+				System.out.print("국어점수를 입력하세요 : ");
 			}
 			if(i == 1) {
 				System.out.println("영어점수를 입력하세요 : ");
@@ -202,32 +213,8 @@ public class C_DimensionalArray {
 			for(int j = 0; j < arr[i].length; j++) {
 				arr[i][j] = sc.nextInt();
 			}
-
 		}
-		
 	}
-	
-	
 
+	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
