@@ -49,7 +49,7 @@ public class C_DimensionalArray {
 		 */
 		
 		for(int i = 0; i < arr.length; i++) { // 외부반복문, arr.length -> [3]행
-			for(int j = 0; j < arr[i].length;j ++) { // 내부반복문, arr[i].length [i]번째의 [5]행 실행
+			for(int j = 0; j < arr[i].length; j++) { // 내부반복문, arr[i].length [i]번째의 [5]행 실행
 				System.out.print(arr[i][j] +" ");
 			}
 			System.out.println();
@@ -198,21 +198,29 @@ public class C_DimensionalArray {
 		// 입력예시 : xx점수를 입력하세요 : 
 		// 출력예시 : xx점수 : xx xx xx
 		
-		Scanner sc = new Scanner(System.in);
+		int[][] arr = new int[2][3]; // 배열 생성
 		
-		int[][] arr = new int[2][3];
+		Scanner sc = new Scanner(System.in); // 점수 입력받기
 		
-		
+		// 입력예시
 		for(int i = 0; i < arr.length; i++) { // 0 -> 국어 , 1 -> 영어
-			if(i == 0) {
-				System.out.print("국어점수를 입력하세요 : ");
-			}
-			if(i == 1) {
-				System.out.println("영어점수를 입력하세요 : ");
-			}
 			for(int j = 0; j < arr[i].length; j++) {
+				
+				System.out.printf("%s점수를 입력하세요 : ", i == 0 ? "국어" : "영어" ); // 삼항 연산자를 통해 국어, 영어점수 입력받기
 				arr[i][j] = sc.nextInt();
+				
 			}
+		}
+		
+		// 출력예시
+		for(int i = 0; i < arr.length; i++) { 
+			
+			System.out.printf("%s점수 : ", i == 0 ? "국어" : "영어" ); // 삼항 연산자를 통해 국어, 영어점수 출력하기
+			
+			for(int j = 0; j < arr[i].length; j++) {
+				System.out.print(arr[i][j] + " ");
+			}
+			System.out.println();
 		}
 	}
 
