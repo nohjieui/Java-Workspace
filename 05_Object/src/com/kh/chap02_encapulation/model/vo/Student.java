@@ -68,7 +68,7 @@ public class Student {
 	}
 	
 	// height필드에 담긴 값을 돌려주는 용도의 메소드
-	public double height() {
+	public double getHeight() {
 		return height;
 	}
 	
@@ -80,22 +80,4 @@ public class Student {
 	
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

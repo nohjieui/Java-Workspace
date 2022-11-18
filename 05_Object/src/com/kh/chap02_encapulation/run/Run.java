@@ -37,8 +37,21 @@ public class Run {
 		noh.setAge(28);
 		noh.setHeight(155.3);
 		
+		System.out.println(noh.getName());
+		System.out.println(noh.getAge());
+		System.out.println(noh.getHeight());
+		
+		
 		System.out.println(noh.information());
+		
+		Student ahn = new Student();
+		ahn.setName("안근태");
+		ahn.setAge(30);
+		ahn.setHeight(170.5);
+		
+		System.out.println(ahn.information());
 		
 	}
 
 }
+
