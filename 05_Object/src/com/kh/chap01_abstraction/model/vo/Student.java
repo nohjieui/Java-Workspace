@@ -4,7 +4,7 @@ public class Student {
 /*
  * 클래스의 구조
  * 
- * public class 클래스명 }
+ * public class 클래스명 {
  *  	// 필드부
  *  	
  *   	// 생성자부
