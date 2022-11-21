@@ -7,7 +7,6 @@ public class Run {
 	public static void main(String[] args) {
 		
 		Student s = new Student();
-		s.setName("노지의");
 		s.information();
 	}
 

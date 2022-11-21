@@ -10,11 +10,11 @@ public class Student {
 	private char gender;
 	
 	{
-		grade = 0;
-		classroom = 0;
-		name = "dd";
-		height = 0.0;
-		gender = 'a';
+		grade = 2;
+		classroom = 3;
+		name = "노지의";
+		height = 155.3;
+		gender = '여';
 		
 	}
 	
