@@ -20,7 +20,6 @@ public class Lotto {
 			}
 		}
 	}
-	
 	//생성자부
 	public Lotto() {
 		
@@ -43,4 +42,5 @@ public class Lotto {
 //		}
 	}
 
+	
 }

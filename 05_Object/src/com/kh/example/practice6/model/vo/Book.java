@@ -1,8 +1,8 @@
 package com.kh.example.practice6.model.vo;
 
 public class Book {
-
-	// 필드부
+	
+	//필드부
 	private String title;
 	private String publisher;
 	private String author;
@@ -13,13 +13,11 @@ public class Book {
 	public Book() {
 
 	}
-
 	public Book(String title, String publisher, String author) {
 		this.title = title;
 		this.publisher = publisher;
 		this.author = author;
 	}
-
 	public Book(String title, String publisher, String author, int price, double discountRace) {
 		this(title, publisher, author);
 		this.price = price;

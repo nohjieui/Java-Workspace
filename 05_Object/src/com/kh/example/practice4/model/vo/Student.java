@@ -9,6 +9,7 @@ public class Student {
 	private double height;
 	private char gender;
 	
+	// 초기화 블럭 이용
 	{
 		grade = 2;
 		classroom = 3;
@@ -66,7 +67,7 @@ public class Student {
 	}
 	
 	public void information() {
-		System.out.println("학년 : "+ grade + ", 반 : "+ classroom+", 이름 : "+name+", 키 : "+height+", 성별 : "+ gender);
+		System.out.println(grade + "학년 "+ classroom + "반, 이름 : "+name+", 키 : "+height+"cm, 성별 : "+ gender + "성");
 	}
 	
 	

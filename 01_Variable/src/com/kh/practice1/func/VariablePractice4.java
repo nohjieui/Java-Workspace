@@ -16,6 +16,8 @@ public class VariablePractice4 {
 		System.out.println("세 번째 문자 : " + name.charAt(2));
 		
 		
+		
+		
 	}
 	
 }
