@@ -28,7 +28,7 @@ public class Run {
 		// private => 오직 해당 클래스에서만 사용가능
 		//System.out.println(f2.pri);
 		
-		//System.out.println(FieldTest2.sta);
+//		System.out.println(FieldTest2.sta);
 		
 		System.out.println(Math.PI);
 		

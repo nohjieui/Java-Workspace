@@ -2,14 +2,12 @@ package com.kh.practice.snack.model.vo;
 
 public class Snack {
 	
-	//필드부
 	private String kind;
 	private String name;
 	private String flavor;
 	private int numOf;
 	private int price;
 	
-	//생성자부
 	public Snack() {
 		
 	}
@@ -22,12 +20,11 @@ public class Snack {
 		this.price = price;
 	}
 	
-	//메소드부
 	public void setKind(String kind) {
 		this.kind = kind;
 	}
 	
-	public void setNamd(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 	
@@ -59,13 +56,24 @@ public class Snack {
 		return numOf;
 	}
 	
-	public int getPrice() {
+	public int getPrice(){
 		return price;
 	}
 	
-	//빵(케이크 - 블루베리) 1개 15000원
 	public String information() {
-		return kind + "("+ name + " - " + flavor + ") "+ numOf + "개 " + price+ "원"; //출력하는 부분x, 문자열로 돌려서 return 해주는 부분 작성
+		return kind +"("+ name + " - " + flavor + ") " + numOf + "개 " + price +"원";	
 	}
-	
+
 }
+
+
+
+
+
+
+
+
+
+
+
+

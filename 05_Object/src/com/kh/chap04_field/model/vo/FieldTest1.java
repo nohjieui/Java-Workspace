@@ -50,7 +50,7 @@ public class FieldTest1 { // FieldTest1 클래스 시작
 		// 초기화 해두지 않으면 에러가남.
 		System.out.println(local);
 		
-//		System.out.println(a); // if 지역변수 안에 존재하기 때문에 
+//		System.out.println(a); // if 지역변수 안에 존재하기 때문에 출력x
 		
 	}
 
