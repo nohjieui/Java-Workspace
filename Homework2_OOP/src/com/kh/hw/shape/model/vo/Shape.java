@@ -54,8 +54,9 @@ public class Shape {
 		return color;
 	}
 	
+	//높이, 너비, 색깔을 반환하는 메소드
 	public String information() {
-		return height + width + color;
+		return height+ " " + width + " " + color;
 	}
 	
 	
