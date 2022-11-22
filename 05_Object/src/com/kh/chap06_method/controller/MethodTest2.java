@@ -45,6 +45,5 @@ public class MethodTest2 {
 		// int count2 = 0; 필드로 static 필드가 아니기때문
 		//return num1 * count2;
 		
-		
 	}
 }

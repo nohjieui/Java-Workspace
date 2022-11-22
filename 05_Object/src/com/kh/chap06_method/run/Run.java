@@ -9,13 +9,13 @@ public class Run {
 		MethodTest1 mt1 = new MethodTest1();
 		mt1.method1();
 		
-		//System.out.println("랜덤값 : "+ mt1.method2());
+		//System.out.println("랜덤값 : "+ mt1.method2()); ->아래와 같은 출력물임
 		int random = mt1.method2();
 		System.out.println("랜덤값 : "+ random);
 		
 		mt1.method3(60, 15);
 		
-		System.out.println(mt1.method4(5, 6));
+		System.out.println(mt1.method4(8, 6));
 		
 		System.out.println("======================================");
 		

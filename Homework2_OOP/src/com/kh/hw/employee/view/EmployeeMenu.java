@@ -3,6 +3,7 @@ package com.kh.hw.employee.view;
 import java.util.Scanner;
 
 import com.kh.hw.employee.controller.EmployeeController;
+import com.kh.hw.employee.model.vo.Employee;
 
 public class EmployeeMenu {
 	
@@ -73,30 +74,41 @@ public class EmployeeMenu {
 		int num = sc.nextInt();
 		
 		switch(num) {
-		case 1 : {
+		case 1 : 
 			System.out.print("수정할 전화번호 : ");
-			ec.modify(sc.nextLine());
+			String phone = sc.nextLine();
+			ec.modify(phone);
 			break;
-		}
-		case 2 : {
+		case 2 : 
 			System.out.print("수정할 사원 연봉 : ");
-			ec.modify(sc.nextInt());
+			int salary = sc.nextInt();
+			ec.modify(salary);
 			break;
-		}
-		case 3 : {
+		case 3 : 
 			System.out.print("수정할 보너스 율 : ");
-			ec.modify(sc.nextDouble());
-		}
-		case 9 : {
-		}
+			double bonus = sc.nextDouble();
+			ec.modify(bonus);
+		case 9 : 
+			System.out.println("메인메뉴로 돌아갑니다.");
+			return;
 		}
 	}
 	
 	public void deleteEmp() {
-		
+		System.out.print("정말 삭제하시겠습니까?(y/n) : ");
+		sc.nextLine();
+		char ch = sc.nextLine().charAt(0);
+		if(ch == 'y' || ch == 'Y') {
+			ec.remove();
+			System.out.println("데이터 삭제에 성공하였습니다.");
+		}
 	}
 	
 	public void printEmp() {
-		
+		if(ec.inform() == null) {
+			System.out.println("사원 데이터가 없습니다.");
+		}else {
+			System.out.println(ec.inform());
+		}
 	}
 }

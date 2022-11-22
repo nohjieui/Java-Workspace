@@ -7,7 +7,7 @@ import com.kh.chap01_oneVsmany.model.vo.Book;
 public class ObjectArrayRun {
 
 	public static void main(String[] args) {
-
+		
 		// Book 객체 배열 선언하는 방법
 		Book[] arr = new Book[3];
 		

@@ -7,11 +7,11 @@ public class EmployeeController {
 	private Employee e = new Employee();
 	
 	public void add(int empNo, String name, char gender, String phone) {
-//		e.Employee(empNo, name, gender, phone);
+		e = new Employee(empNo, name, gender, phone);
 	}
 	
 	public void add(int empNo, String name, char gender, String phone, String dept, int salary, double bonus) {
-		
+		e = new Employee(empNo, name, gender, phone, dept, salary, bonus);
 	}
 	
 	public void modify(String phone) {
@@ -27,11 +27,15 @@ public class EmployeeController {
 	}
 	
 	public Employee remove() {
-		return e;
+		return e = null;
 	}
 	
 	public String inform() {
-		return "";
+		if(e == null) {
+			return null;
+		} else {
+			return e.printEmployee();
+		}
 	}
 	
 	
