@@ -21,62 +21,62 @@ public class Run {
 //		
 //		System.out.println(bk2.information());
 //		
-//		// 3. 사용자가 입력한 값들로 객체 생성 ex)네이버 회원가입
-//		//Book bk3 = new Book(제목, 저자, 가격, 출판사);
-//		Scanner sc = new Scanner(System.in);
-//		System.out.print("제목 : ");
-//		String title = sc.nextLine();
-//		
-//		System.out.print("저자 : ");
-//		String author = sc.nextLine();
-//		
-//		System.out.print("가격 : ");
-//		int price = sc.nextInt();
-//		sc.nextLine();
-//		
-//		System.out.print("출판사 : ");
-//		String publisher = sc.nextLine();
-//		
-//		Book bk3 = new Book(title, author, price, publisher);
-//		
-//		System.out.println(bk3.information());
+		// 3. 사용자가 입력한 값들로 객체 생성 ex)네이버 회원가입
+		//Book bk3 = new Book(제목, 저자, 가격, 출판사);
+		Scanner sc = new Scanner(System.in);
+		System.out.print("제목 : ");
+		String title = sc.nextLine();
+		
+		System.out.print("저자 : ");
+		String author = sc.nextLine();
+		
+		System.out.print("가격 : ");
+		int price = sc.nextInt();
+		sc.nextLine();
+		
+		System.out.print("출판사 : ");
+		String p = sc.nextLine();
+		
+		Book bk3 = new Book(title, author, price, p);
+		
+		System.out.println(bk3.information());
 		
 		// 세개의 Book 객체가 필요하다는 가정하에 각각의 book 객체를 따로따로 관리.
 		// 단, 사용자에게 입력받은 값들로 book 객체 채워넣기.
-		Book bk1 = null;
-		Book bk2 = null;
-		Book bk3 = null;
-		
-		Scanner sc = new Scanner(System.in);
-		
-		for(int i = 1; i <=3; i++) {
-			System.out.print("제목 : ");
-			String title = sc.nextLine();
-			
-			System.out.print("저자 : ");
-			String author = sc.nextLine();
-			
-			System.out.print("가격 : ");
-			int price = sc.nextInt();
-			sc.nextLine();
-			
-			System.out.print("출판사 : ");
-			String publisher = sc.nextLine();
-			
-			if(i==1) {
-				bk1 = new Book(title, author, price, publisher);
-			} else if(i == 2) {
-				bk2 = new Book(title, author, price, publisher);
-			} else {
-				bk3 = new Book(title, author, price, publisher);
-			}
-	
-		}
-		
-		// 출력시 반복문 사용 불가
-		System.out.println(bk1.information());
-		System.out.println(bk2.information());
-		System.out.println(bk3.information());
+//		Book bk1 = null;
+//		Book bk2 = null;
+//		Book bk3 = null;
+//		
+//		Scanner sc = new Scanner(System.in);
+//		
+//		for(int i = 1; i <=3; i++) {
+//			System.out.print("제목 : ");
+//			String title = sc.nextLine();
+//			
+//			System.out.print("저자 : ");
+//			String author = sc.nextLine();
+//			
+//			System.out.print("가격 : ");
+//			int price = sc.nextInt();
+//			sc.nextLine();
+//			
+//			System.out.print("출판사 : ");
+//			String publisher = sc.nextLine();
+//			
+//			if(i==1) {
+//				bk1 = new Book(title, author, price, publisher);
+//			} else if(i == 2) {
+//				bk2 = new Book(title, author, price, publisher);
+//			} else {
+//				bk3 = new Book(title, author, price, publisher);
+//			}
+//	
+//		}
+//		
+//		// 출력시 반복문 사용 불가
+//		System.out.println(bk1.information());
+//		System.out.println(bk2.information());
+//		System.out.println(bk3.information());
 		
 	}
 

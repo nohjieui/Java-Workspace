@@ -34,19 +34,20 @@ public class ArrayForeach {
 		
 		int [] arr2 = {40, 50, 60};
 		
-		for(int num : arr2) { // arr2라는 배열의 0부터 순차적으로 접근하면서 int num이라는 변수에 arr2의 각 인덱스의 값을 저장함.
+		for(int num : arr2) { // arr2라는 배열의 0번 인덱스부터 순차적으로 접근하면서 int num이라는 변수에 arr2의 각 인덱스의 값을 저장함.
 			System.out.println(num);
 		}
 		
 		// Phone 객제 배열 만들기
-		Phone[] phones = new Phone[3];
+		Phone[] phones = new Phone[3]; //Phone객체 배열의 변수명 phones
 		
-		phones[0] = new Phone("갤럭시", "zplip3", "삼성", 1000000);
+		phones[0] = new Phone("갤럭시", "zplip3", "삼성", 1000000); // Phone객체의 매개변수 있는 생성자로 초기화
 		phones[1] = new Phone("갤럭시", "zplip4", "삼성", 1350000);
 		phones[2] = new Phone("갤럭시", "fold4", "삼성", 2000000);
 		
 		
 		int sum = 0;
+		//향상된 반복문 활용
 		for(Phone phone : phones) {
 			System.out.println(phone.infomation());
 			sum += phone.getPrice();
@@ -56,7 +57,7 @@ public class ArrayForeach {
 
 		
 		// 사용자에게 구매하고자하는 폰의 시리즈을 입력받고
-		// 구매하고자하는 핸드폰의 phones 배열에 있으면
+		// 구매하고자하는 핸드폰의 시리즈가 phones 배열에 있으면
 		// "xx핸드폰의 가격은 xxxx원 입니다."
 		// 구매하고자하는 핸드폰이 없다면
 		// "해당핸드폰이 없습니다."
@@ -66,16 +67,37 @@ public class ArrayForeach {
 		String series = sc.nextLine();
 		
 		int count = 0;
-		for(Phone phone : phones) {
-			if(phone.getSeries().equals(series)) {
-				System.out.println(phone.getName() + phone.getSeries()  +"핸드폰의 가격은 "+ phone.getPrice() +"원 입니다.");
+		for(Phone p :phones) {
+			if(p.getSeries().equals(series)) {
 				count++;
+				System.out.printf("%s 핸드폰의 가격은 %d원 입니다.",p.getSeries(),p.getPrice());
 				break;
-			}
+			} 
 		}
 		if(count == 0) {
 			System.out.println("해당 핸드폰이 없습니다.");
 		}
+		
+		
+		
+		
+		
+		
+//		Scanner sc = new Scanner(System.in);
+//		System.out.print("핸드폰 이름 : ");
+//		String series = sc.nextLine();
+//		
+//		int count = 0;
+//		for(Phone phone : phones) {
+//			if(phone.getSeries().equals(series)) {
+//				System.out.println(phone.getName() + phone.getSeries()  +"핸드폰의 가격은 "+ phone.getPrice() +"원 입니다.");
+//				count++;
+//				break;
+//			}
+//		}
+//		if(count == 0) {
+//			System.out.println("해당 핸드폰이 없습니다.");
+//		}
 		
 	}
 

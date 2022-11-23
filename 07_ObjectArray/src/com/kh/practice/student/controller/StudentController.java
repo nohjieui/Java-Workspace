@@ -17,15 +17,13 @@ public class StudentController {
 	}
 	
 	public Student[] printStudent() {
-		
 		return sArr;
 	}
 	
 	public int sumScore() {
-		
 		int sum = 0;
-		for(int i = 0; i < sArr.length; i++) {
-			sum += sArr[i].getScore();
+		for(Student std : sArr) {
+			sum += std.getScore();
 		}
 		return sum;
 	}
@@ -34,9 +32,6 @@ public class StudentController {
 		double[] dArr = new double[2];
 		dArr[0] = sumScore();
 		dArr[1] = sumScore() / sArr.length;
-		System.out.println("학생 점수 합계 : " + (int)dArr[0]);
-		System.out.println("학생 점수 평균 : " + dArr[1]);
-		
 		return dArr;
 		
 	}

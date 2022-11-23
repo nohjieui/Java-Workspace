@@ -10,16 +10,17 @@ public class StudentMenu {
 	public StudentMenu() {
 		
 		System.out.println("==========학생 정보 출력==========");
-		for(int i = 0; i <sArr.length; i++) {
-			System.out.println(sArr[i].inform());
+		Student[] sArr = ssm.printStudent();
+		for(Student std : sArr) {
+			System.out.println(std.inform());
 		}
-
-//		ssm.printStudent();
 		
 		System.out.println();
 		
 		System.out.println("==========학생 성적 출력==========");
-		ssm.avgScore();
+		double[] avg = ssm.avgScore();
+		System.out.println("학생 점수 합계 : " + (int) avg[0]);
+		System.out.println("학생 점수 평균 : " + avg[1]);
 		
 		System.out.println();
 		
