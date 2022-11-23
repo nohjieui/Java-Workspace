@@ -77,9 +77,6 @@ public class ArrayForeach {
 			System.out.println("해당 핸드폰이 없습니다.");
 		}
 		
-		System.out.println();
-		
-		
 	}
 
 }
