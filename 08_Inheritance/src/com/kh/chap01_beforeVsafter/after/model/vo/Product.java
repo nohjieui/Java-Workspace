@@ -55,8 +55,4 @@ public class Product {
 	public String infomartion() {
 		return "brand : " + brand + ", pCode : " + pCode + ", pName : " + pName + ", price : " + price;
 	}
-
-
-	
-	
 }
