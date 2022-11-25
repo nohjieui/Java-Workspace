@@ -7,7 +7,7 @@ public class Book /* extends Object */{
 	private int price;
 	
 	public Book() {
-		super();
+		super(); //-> Object 클래스를 항상 상속받고 있기때문에 super();가 호출됨
 	}
 
 	public Book(String title, String author, int price) {
@@ -64,10 +64,11 @@ public class Book /* extends Object */{
 	 */
 	
 	@Override
-	public String toString() {
+	public String toString() { // toString()주소값+해당클래스 이름을 출력해주는 메소드임
+							   // System.out.println(bk) 은 주소값을 출력함  System.out.println(bk.toString())을 자동으로 가지고있음
+							   // 현재 클래스를 출력하기위한 메서드로 재정의함
 		return "책 제목 : "+title+", 책 저자 : "+author+", 책 가격 : "+price;
 	}
-	
 	
 	
 }
