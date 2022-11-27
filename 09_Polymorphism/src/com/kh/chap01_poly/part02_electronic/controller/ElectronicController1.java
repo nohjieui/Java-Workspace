@@ -1,8 +1,8 @@
-package com.kh.chap01_poly.par02_electronic.controller;
+package com.kh.chap01_poly.part02_electronic.controller;
 
-import com.kh.chap01_poly.par02_electronic.model.vo.Desktop;
-import com.kh.chap01_poly.par02_electronic.model.vo.NoteBook;
-import com.kh.chap01_poly.par02_electronic.model.vo.Tablet;
+import com.kh.chap01_poly.part02_electronic.model.vo.Desktop;
+import com.kh.chap01_poly.part02_electronic.model.vo.NoteBook;
+import com.kh.chap01_poly.part02_electronic.model.vo.Tablet;
 
 // 다형성 적용 전 클래스
 public class ElectronicController1 {
@@ -15,6 +15,7 @@ public class ElectronicController1 {
 	// 현재 용산전자상가에 데스크탑을 납품하는 메서드
 	public void insert(Desktop d) {
 		//desk = new Desktop("삼성", "데탑", 900000, "Geforce 1070");
+//		Desktop desk = new Desktop("삼성", "데탑", 900000, "Geforce 1070");
 		desk = d;
 	}
 	

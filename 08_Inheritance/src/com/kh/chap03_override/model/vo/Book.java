@@ -58,13 +58,13 @@ public class Book /* extends Object */{
 	 *  @Override 어노테이션
 	 *  - 생략가능( 명시를 안해도 부모메소드와 형태가 같으면 오버라이딩이 된것)
 	 *  - 어노테이션을 붙이는 이유
-	 *    > 잘못 기술했 경우(성립조건과 다르게) 오류를 알려주기 때문에 다시한번 검토할 수 있게 유도한다
+	 *    > 잘못 기술했을 경우(성립조건과 다르게) 오류를 알려주기 때문에 다시한번 검토할 수 있게 유도한다
 	 *    > 혹시라도 부모메소드가 나중에 수정이 되었을경우 오류를 알려주기 때문에 검토할 수 있게 유도한다.
 	 *    > 이 메소드가 오버라이딩된 메소드라는걸 알리고자 하는목적.★
 	 */
 	
 	@Override
-	public String toString() { // toString()주소값+해당클래스 이름을 출력해주는 메소드임
+	public String toString() { // toString() -> 주소값 + 해당클래스 이름을 출력해주는 메소드임
 							   // System.out.println(bk) 은 주소값을 출력함  System.out.println(bk.toString())을 자동으로 가지고있음
 							   // 현재 클래스를 출력하기위한 메서드로 재정의함
 		return "책 제목 : "+title+", 책 저자 : "+author+", 책 가격 : "+price;

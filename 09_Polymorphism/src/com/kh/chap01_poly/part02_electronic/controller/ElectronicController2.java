@@ -1,6 +1,6 @@
-package com.kh.chap01_poly.par02_electronic.controller;
+package com.kh.chap01_poly.part02_electronic.controller;
 
-import com.kh.chap01_poly.par02_electronic.model.vo.*;
+import com.kh.chap01_poly.part02_electronic.model.vo.*;
 
 // 다형성을 적용시켰을 때
 public class ElectronicController2 {
@@ -13,6 +13,7 @@ public class ElectronicController2 {
 		elec[index] = any;
 	}
 	
+	// Electronic 배열안에 어떤 데이터가 있는지 반환해주는 select 메소드 생성
 	public Electronic select(int index) {
 		return elec[index];
 	}

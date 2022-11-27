@@ -1,4 +1,4 @@
-package com.kh.chap01_poly.par02_electronic.model.vo;
+package com.kh.chap01_poly.part02_electronic.model.vo;
 
 public class Electronic {
 	
@@ -40,9 +40,5 @@ public class Electronic {
 	public String toString() {
 		return "Electronic [brand=" + brand + ", name=" + name + ", price=" + price + "]";
 	}
-	
-	
-	
-	
 
 }
