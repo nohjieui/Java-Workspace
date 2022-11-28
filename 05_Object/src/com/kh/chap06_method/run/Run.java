@@ -7,9 +7,9 @@ public class Run {
 	public static void main(String[] args) {
 
 		MethodTest1 mt1 = new MethodTest1();
+		
 		mt1.method1();
 		
-		//System.out.println("랜덤값 : "+ mt1.method2()); ->아래와 같은 출력물임
 		int random = mt1.method2();
 		System.out.println("랜덤값 : "+ random);
 		
@@ -26,6 +26,7 @@ public class Run {
 		// MethodTest1.method1(); // 실행x
 		System.out.println(MethodTest2.method2());
 		
+		MethodTest2.method3("안근태", 30);
 		MethodTest2.method3("노지의", 28);
 		
 		System.out.println(MethodTest2.method4(100));
