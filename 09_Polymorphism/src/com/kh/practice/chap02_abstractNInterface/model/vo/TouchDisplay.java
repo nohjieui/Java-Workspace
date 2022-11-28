@@ -2,6 +2,6 @@ package com.kh.practice.chap02_abstractNInterface.model.vo;
 
 public interface TouchDisplay {
 	
-	public String touch(); // 터치 방식
+	String touch(); // 터치 방식 추상메소드
 
 }

@@ -2,8 +2,8 @@ package com.kh.practice.chap02_abstractNInterface.model.vo;
 
 public interface NotePen {
 	
-	public boolean PEN_BUTTON = true;
+	boolean PEN_BUTTON = true;
 	
-	boolean bluetoothPen();
+	boolean bluetoothPen(); // 블루투스 펜 탑재여부 추상 메소드
 
 }
