@@ -10,14 +10,22 @@ public class PhoneController {
 	private String[] result = new String[2];
 	
 	public String[] method() {
-		String[] result = new String[2];
-		Phone[] phone = new Phone[2];
-		phone[0] = new GalaxyNote9();
-		phone[1] = new V40();
+//		String[] result = new String[2];
+		Phone[] phones = new Phone[2];
+		phones[0] = new GalaxyNote9();
+		phones[1] = new V40();
 		
-		for(int i = 0; i <phone.length; i++) {
-			result[i] = ((SmartPhone)phone[i]).printInformation();
+		int count = 0;
+		for(Phone p :phones) {
+			if(p instanceof V40) {
+				result[count++] = ((V40) p).printInformation();
+			} else {
+				result[count++] = ((GalaxyNote9) p).printInformation();
+			}
 		}
+//		for(int i = 0; i <phones.length; i++) {
+//			result[i] = ((SmartPhone)phones[i]).printInformation();
+//		}
 		
 		return result ;
 	}
