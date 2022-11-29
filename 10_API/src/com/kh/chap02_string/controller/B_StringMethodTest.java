@@ -23,7 +23,7 @@ public class B_StringMethodTest {
 		System.out.println("str1의 길이 : "+str1.length());
 		
 		// 4. 문자열.substring(int beginIndex) : 반환값 String
-		//    => 문자열 beginIndex위치에서 부터 끝까지의 문자열을 추출해서 리턴.
+		//    => 문자열 beginIndex 위치에서부터 끝까지의 문자열을 추출해서 리턴.
 		
 		//    문자열.substring(int beginIndex, int endIndex) : 반환값 String
 		//    => 문자열의 beginIndex의 위치에서부터 endIndex -1 까지의 문자열을 추출해서 리턴
@@ -60,25 +60,3 @@ public class B_StringMethodTest {
 	}
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
