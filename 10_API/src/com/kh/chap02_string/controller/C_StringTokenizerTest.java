@@ -11,6 +11,7 @@ public class C_StringTokenizerTest {
 		// 구분자를 제시해서 해당 문자열을 분리시키는 방법
 		// 방법 1. 분리된 문자열들을 String[]배열에 차곡차곡 담아서 관리하는 방법
 		//        문자열.split(구분자) : 반환형 String[] ★자주사용됨!!★
+		
 		String[] arr = str.split(",");
 		
 //		for(int i = 0; i<arr.length; i++) {
@@ -19,7 +20,7 @@ public class C_StringTokenizerTest {
 		
 		// 문자열 배열의 경우 for문을 다음과 쓸 수 있다. : 향상된 for문
 		// for( 값을 받아줄 변수 : 순차적으로 접근할 배열 ) {
-		
+		//
 		// }
 		for(String s : arr) {
 			System.out.println(s);

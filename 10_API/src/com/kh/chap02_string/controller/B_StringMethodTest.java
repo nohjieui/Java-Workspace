@@ -27,8 +27,8 @@ public class B_StringMethodTest {
 		
 		//    문자열.substring(int beginIndex, int endIndex) : 반환값 String
 		//    => 문자열의 beginIndex의 위치에서부터 endIndex -1 까지의 문자열을 추출해서 리턴
-		System.out.println(str1.substring(6));
-		System.out.println(str1.substring(0, 5)); // 0 <= 인덱스범위 < 5
+		System.out.println(str1.substring(6)); // World
+		System.out.println(str1.substring(0, 4)); // 0 <= 인덱스범위 < 4 // Hell
 		
 		// 5. 문자열.replace(char old, char new) : 반환형 String
 		//    => 현재 문자열에서 old문자를 new문자로 대체(replace)하고 변환한 문자열 리턴
