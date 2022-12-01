@@ -40,7 +40,7 @@ public class FileRun {
 			
 			System.out.println("파일명 : "+file.getName());
 			System.out.println("상위폴더 : "+file.getParent());
-			System.out.println("파일옹량 : "+file.length());
+			System.out.println("파일용량 : "+file.length());
 			System.out.println("절대경로 : "+file.getAbsolutePath());
 			
 		} catch (IOException e) {
