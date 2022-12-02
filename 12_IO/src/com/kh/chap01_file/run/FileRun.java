@@ -7,7 +7,7 @@ public class FileRun {
 
 	public static void main(String[] args) {
 		// java.io.File 클래스를 가지고 간단하게 파일만드는 과정 실습.
-		
+	
 		try {
 			// 1. 별도의 경로를 지정을 하진 않고 파일명(test.txt)만 제시해서 생성해보기 => 경로는 현재 디렉토리
 			File file1 = new File("test.txt");
