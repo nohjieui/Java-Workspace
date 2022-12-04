@@ -15,8 +15,8 @@ public class FileByteRun {
 		 * xxxOutputStream : xxx매체로부터 데이터를 "출력"하는 통로(외부매체에 데이터를 내보내겠다. 쓰겠다.)
 		 */
 		FileByteDao fbd = new FileByteDao();
-		fbd.fileSave();
-//		fbd.fileRead();
+//		fbd.fileSave();
+		fbd.fileRead();
 		
 	}
 }

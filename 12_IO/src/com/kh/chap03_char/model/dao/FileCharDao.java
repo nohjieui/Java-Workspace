@@ -63,8 +63,6 @@ public class FileCharDao {
 				System.out.println((char)value);
 			}
 			
-			
-			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -79,25 +77,3 @@ public class FileCharDao {
 		
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

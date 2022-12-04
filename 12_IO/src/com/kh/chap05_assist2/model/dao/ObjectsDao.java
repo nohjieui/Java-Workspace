@@ -35,7 +35,6 @@ public class ObjectsDao {
 	
 	public void fileRead() {
 		
-		
 		try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream("phoneList.txt"))){
 			
 			while(true) {
