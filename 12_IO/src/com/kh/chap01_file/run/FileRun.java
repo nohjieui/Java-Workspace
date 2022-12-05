@@ -21,7 +21,7 @@ public class FileRun {
 			String dir = "C:\\bbb";
 			File bbbFolder = new File(dir);
 			if(!bbbFolder.isDirectory()) {
-				bbbFolder.mkdir(); // mkdir : makeDirectory
+				bbbFolder.mkdir(); // mkdir : makeDirectory -> 경로생성 메소드
 			}
 			
 			File file3 = new File("C:\\bbb\\test.txt");

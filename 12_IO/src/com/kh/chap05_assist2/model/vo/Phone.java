@@ -2,7 +2,7 @@ package com.kh.chap05_assist2.model.vo;
 
 import java.io.Serializable;
 
-public class Phone implements Serializable { //직렬화 선언
+public class Phone implements Serializable { //직렬화 선언 -> 객체를 외부파일로 내보내고자 할 때
 	
 	private String name;
 	private int price;

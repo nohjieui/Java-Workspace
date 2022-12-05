@@ -16,16 +16,16 @@ public class DateRun {
 		 */
 		
 		// 기본생성자를 통해 Date객체 생성 => 현재 날짜 및 시간을 가지고옴.
-		Date today = new Date();
-		System.out.println("기본생성자 : "+today);
+//		Date today = new Date();
+//		System.out.println("기본생성자 : "+today);
 		
 		// 내가 원하는 날짜(2022년 11월 4일)
 		// 방법1. 매개변수있는 Date클래스 생성자를 통해 변경
 		//Date date1 = new Date(2022, 11, 4); // Depreacted : 권장하지 않음. Mon Dec 04 00:00:00 KST 3922 이 출력됨
 		// 내부적으로 내가 전달할 년도 + 1900로 인식함 => 셋팅을 하고자하는 년도 - 1900
 		// 내가 전달한 월 +1로 인식함 => 월 -1
-		Date date1 = new Date(2022 -1900, 11-1, 4, 15, 30, 0); //년, 월, 일, 시, 분, 초
-		System.out.println("매개변수 생성자 : "+date1);
+//		Date date1 = new Date(2022 -1900, 11-1, 4, 15, 30, 0); //년, 월, 일, 시, 분, 초
+//		System.out.println("매개변수 생성자 : "+date1);
 		
 		// "2022년 11월 4일 9시 0분 0초"
 		// 내 입맛대로 포맷을 지정한 문자열을 받고자 할 때
@@ -35,6 +35,7 @@ public class DateRun {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일 hh시 mm분 ss초");
 		//SimpleDateFormat sdf = new SimpleDateFormat(); -> SimpleDateFormat 객체 생성
 		//형식을 지정 -> ()안에 "yyyy년 MM월 dd일 hh시 mm분 ss초"
+		Date date1 = new Date(2022 -1900, 11-1, 4, 15, 30, 0); //년, 월, 일, 시, 분, 초
 		
 		// 2. sdf객체에서 제공하는 format메소드 호출 하면서 ~ Date객체 전달 => 포맷에 지정한 형식대로 String문자열 반환
 		//    sdf.format(Date객체) : String
