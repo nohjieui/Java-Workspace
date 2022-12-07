@@ -12,13 +12,13 @@ public class Run {
 //		aspt.method3();
 		
 		B_StringMethodTest bsmt = new B_StringMethodTest();
-//		bsmt.method();
+		bsmt.method();
 		
 		C_StringTokenizerTest cstt = new C_StringTokenizerTest();
 //		cstt.method();
 		
 		D_StringBufferAndBuilder dsbab = new D_StringBufferAndBuilder();
-		dsbab.method();
+//		dsbab.method();
 		
 	}
 

@@ -6,7 +6,7 @@ public class Run {
 
 	public static void main(String[] args) {
 		// 인터페이스 적용 전.
-		// Person p = new Person(); -> 객체 생성 불가
+		// Person p = new Person(); -> 객체 생성 불가 -> 추상클래스이기때문
 //		Person p1 = new Mother("민엄마", 74, 60, "출산"); // Mother 클래스 안에 있는 기본생성자 호출
 //		Person p2 = new Baby("민애기", 3.5, 60);
 //		
@@ -24,7 +24,7 @@ public class Run {
 		
 		// 인터페이스 적용 후
 		//Basic b1 = new Basic(); -> 객체 생성 불가
-		Basic b1 = new Mother("민엄마", 77, 70, "출산");
+		Basic b1 = /*(Basic)*/ new Mother("민엄마", 77, 70, "출산"); // 업캐스팅이 자동으로 발생하고 있어 (Basic)생략되어 있음. 자동형변환이 되고있음
 		Basic b2 = new Baby("민아기", 4.5, 70);
 		
 		System.out.println(b1);

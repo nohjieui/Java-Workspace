@@ -23,13 +23,15 @@ public class FileCharDao {
 			char[] cArr = {'a', 'p', 'p', 'l','e'};
 			fw.write(cArr);
 			
-			fw.flush();
+			fw.flush(); // FileWriter 내부 버퍼의 내용을 파일에 writer한다.
+			            // flush()를 호출하지 않는다면 내용이 버퍼에만 남고 파일에는 쓰이지 않는 상황이 나올 수 있음
 			
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
 			try {
-				fw.close();
+				fw.close(); // FileWriter는 스트림을 이용하여 파일의 내용을 읽어들인다.
+				            // 이때 close()를 호출하여 스트림을 닫으면 그 스트림을 다시 이용하여 파일에 쓰는 것이 불가능하다.
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

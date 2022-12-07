@@ -43,7 +43,7 @@ public class BufferedDao {
 		
 		// try ~ with ~ resource 구문(jdk 7버전 이상부터만 가능)
 		/*
-		 * try(스트림 객체 생성;){
+		 * try(스트림 객체 생성){
 		 *    //예외가 발생할 수 있는 구문
 		 * } catch(예외클래스명  e){
 		 *    //예외발생시 실행할 구문
