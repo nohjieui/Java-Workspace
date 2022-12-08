@@ -13,6 +13,7 @@ public class Account {
 	// 출금메소드
 	public /*synchronized -> 동기화방법 1*/ void withdraw(int money) {
 		synchronized(this) { // 동기화방법 2
+			                 // synchronized(this) 내가 격리시킬 객체 : this -> Account
 			String thName = Thread.currentThread().getName();
 			System.out.println("현재 잔액은 ? : "+ balance);
 			if(money <= balance) { //1200원에서 100원만 출금하려고 할 때

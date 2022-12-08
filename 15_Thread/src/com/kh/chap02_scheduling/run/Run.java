@@ -50,7 +50,7 @@ public class Run {
 		 * 
 		 * 주종관계 설정
 		 * main스레드가 종료시 다른스레드도 종료시키기 위해서 반드시 setDaemon사용.
-		 * 주위점은 스레드중 한개라도 setDeamon으로 설정시 모든 스레드에 setDaemon설정을 해줘야함
+		 * 주위점은 스레드중 한개라도 setDaemon으로 설정시 모든 스레드에 setDaemon설정을 해줘야함
 		 */
 		System.out.println("메인스레드의 끝부분 ");
 		// 시작순서는 우선순위와 다를 수 있지만 종료순위는 우선순위(priority)가 높은순으로 끝나게됨.(항상 그렇지 않음)
