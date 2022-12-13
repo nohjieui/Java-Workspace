@@ -58,6 +58,7 @@ public class MusicController {
 		
 		for(int i = 0; i < list.size(); i++) {
 			if(list.get(i).getTitle().equals(title)) {
+				// 삭제해야할 Music 객체
 				m = list.remove(i);
 				break;
 			}
@@ -80,7 +81,9 @@ public class MusicController {
 	
 	public int ascTitle() {
 		// 리스트 곡 명 오름차순 정렬, 제목이 같으면 가수 명으로 오름차순 정렬, 1 리턴
-		Collections.sort(list);
+		Collections.sort(list); 
+		// Collections : 내부적으로 데이터를 추가, 삭제, 정렬하는 기능을 제공하고 있는 프레임워크
+		// sort()메서드 : 내부적으로 정렬을 제공하고 있는 기능
 		return 1;
 	}
 	
@@ -89,86 +92,6 @@ public class MusicController {
 		Collections.sort(list, new AscTitle());
 		return 1;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-//	private List<Music> list = new ArrayList();
-//	
-//	public int addList(Music music) {
-//		// 마지막 리스트에 객체 저장, 1 리턴
-//		int result = 0;
-//		try {
-//			list.add(music);
-//			result = 1;
-//		} catch(Exception e) {
-//			result = 0;
-//		}
-//		return result;
-//	}
-//	
-//	public int addAtZero(Music music) {
-//		// 첫 번째 리스트에 객체 저장, 1 리턴
-//		int result = 0;
-//		try {
-//			list.add(0, music);
-//			result = 1;
-//		} catch(Exception e) {
-//			result = 0;
-//		}
-//		return result;	}
-//	
-//	public List printAll() {
-//		return list;
-//	}
-//	
-//	public Music searchMusic(String title) {
-//		Music m = null;
-//		
-//		for(Music music : list) {
-//			if(music.getTitle().equals(title)) {
-//				m = music;
-//				break;
-//			}
-//		}
-//		return m;
-//	}
-//	
-//	public Music removeMusic(String title) {
-//		Music m = null;
-//		
-//		for(int i = 0; i<list.size(); i++) {
-//			if(list.get(i).getTitle().equals(title)) {
-//				// 삭제해야 할 Music 객체
-//				m = list.remove(i);
-//				break;
-//			}
-//		}
-//		return m;
-//	}
-//	
-//	public Music setMusic(String title, Music music) {
-//		Music m = null;
-//		
-//		for(int i = 0; i < list.size(); i++) {
-//			if(list.get(i).getTitle().equals(title)) {
-//				m = list.set(i, music);
-//			}
-//		}
-//		return m;
-//	}
-//	
-//	public int ascTitle() {
-//		return 0;
-//	}
-//	
-//	public int descSinger() {
-//		return 0;
-//	}
+
 
 }

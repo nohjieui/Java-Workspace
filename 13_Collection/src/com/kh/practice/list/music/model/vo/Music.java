@@ -2,7 +2,7 @@ package com.kh.practice.list.music.model.vo;
 
 import java.util.Comparator;
 
-public class Music implements Comparator {
+public class Music implements Comparable {
 
 	private String title;
 	private String singer;
@@ -35,7 +35,7 @@ public class Music implements Comparator {
 
 	@Override
 	public String toString() {
-		return "Music [title=" + title + ", singer=" + singer + "]";
+		return title + " - " + singer;
 	}
 
 	@Override
@@ -71,7 +71,7 @@ public class Music implements Comparator {
 	
 	@Override 
 	public int compareTo(Object o) {
-		Music other = (Music) o;
+		Music other = (Music) o; // Music 객체로 다운캐스팅 해줘야함
 		if(this.title.compareTo(other.title) == 0) {
 			return this.singer.compareTo(other.singer);
 		}else {
