@@ -47,7 +47,7 @@ public class PropertiesRun {
 			// 3. store(OutputStream os, String Comments) : Properties에 담긴 key - value값들로 파일을 출력
 			prop.store(new FileOutputStream("test.properties"),"Properties Test");
 			
-			// 4. storeToXML(OutputStream os, String Comments) : Properties에 담긴 key - value 값들을 xml anstjfh cnffur
+			// 4. storeToXML(OutputStream os, String Comments) : Properties에 담긴 key - value 값들을 xml 문서로 출력
 			prop.storeToXML(new FileOutputStream("test.xml"), "Properties Test");
 			
 		} catch (IOException e) {
@@ -55,5 +55,4 @@ public class PropertiesRun {
 		}
 		
 	}
-
 }

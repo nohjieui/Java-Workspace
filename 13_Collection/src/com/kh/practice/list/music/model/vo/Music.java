@@ -1,6 +1,8 @@
 package com.kh.practice.list.music.model.vo;
 
-public class Music {
+import java.util.Comparator;
+
+public class Music implements Comparator {
 
 	private String title;
 	private String singer;
@@ -67,9 +69,14 @@ public class Music {
 		return true;
 	}
 	
+	@Override 
 	public int compareTo(Object o) {
-		return 0;
-		
+		Music other = (Music) o;
+		if(this.title.compareTo(other.title) == 0) {
+			return this.singer.compareTo(other.singer);
+		}else {
+			return this.title.compareTo(other.title);
+		}
 	}
 	
 }

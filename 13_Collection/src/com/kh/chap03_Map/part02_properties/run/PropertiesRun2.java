@@ -26,5 +26,4 @@ public class PropertiesRun2 {
 		System.out.println(prop);
 		System.out.println(prop.getProperty("List"));
 	}
-
 }

@@ -54,9 +54,10 @@ public class ListRun {
 
 		ArrayList<Music> list = new ArrayList<>(3); // 내부적으로 크기 10짜리인 '배열'이 생성됨.
 		
+		
 		System.out.println(list);
 		/*
-		 * 제네릭(<E>) -- > Element
+		 * 제네릭(<E>) --> Element
 		 * 별도의 제네릭 제지 없이 컬렉션 객체를 생성하게 되면
 		 * 해당 컬렉션에 다양한 타입의 데이터값들이 담길 수 있음.(Default E == Object)
 		 * 
